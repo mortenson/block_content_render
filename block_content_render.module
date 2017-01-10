@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_view_alter().
+ */
+function block_content_render_block_content_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  $build['#attributes']['class'][] = 'my-very-special-class';
+  $build['#attached']['library'][] = 'block_content_render/main';
+}

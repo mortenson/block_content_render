@@ -1,0 +1,8 @@
+name: 'Block Content Render'
+type: module
+description: 'Shows off some interesting behavior when rendering block content entities outside of Panels or Core (theme regions). Visit /block/N/render for an example.'
+version: VERSION
+core: 8.x
+package: Other
+dependencies:
+  - block_content

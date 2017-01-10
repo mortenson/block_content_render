@@ -1,0 +1,5 @@
+.my-very-special-class:after {
+  content: "The class I added in hook_entity_view_alter was added, sweet!";
+  color: red;
+  font-size: 20px;
+}
